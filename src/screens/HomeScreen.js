@@ -1,8 +1,8 @@
-import { View, Text, Image } from "react-native";
+import { View, Text, Image, TextInput, ScrollView } from "react-native";
 import React, { useLayoutEffect } from "react";
 import { useNavigation } from "@react-navigation/native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { Entypo, AntDesign } from "@expo/vector-icons";
+import { Entypo, AntDesign, Ionicons, FontAwesome } from "@expo/vector-icons";
 
 export const HomeScreen = () => {
   const navigation = useNavigation();
@@ -34,6 +34,18 @@ export const HomeScreen = () => {
         </View>
 
         <AntDesign name="bars" size={35} color="#f8fafc" />
+      </View>
+      <View>
+        <View className='flex-row items-center space-x-2 pb-2 mx-4'>
+          <View className="flex-row flex-1 space-x-2 bg-gray-200 p-3 rounded-lg">
+          <FontAwesome name="search" size={24} color="#707070" />
+          <TextInput placeholder="Parlors and Artists" keyboardType="default"/>
+          </View>
+          <Ionicons name="filter" size={24} color="#f8fafc" />
+        </View>
+        <ScrollView>
+          
+        </ScrollView>
       </View>
     </SafeAreaView>
   );
