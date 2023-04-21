@@ -48,23 +48,23 @@ export const HomeScreen = () => {
           </View>
           <Ionicons name="filter" size={24} color="#e3874f" />
         </View>
+        <ScrollView contentContainerStyle={{ paddingBottom: 235 }}>
+          <Catagories />
+          <FeaturedRow id="123" title="Parlors" description="Shops near you" />
+
+          <FeaturedRow
+            id="1234"
+            title="Artists"
+            description="Artists you might like."
+          />
+
+          <FeaturedRow
+            id="12345"
+            title="Offers Near You!"
+            description="Special flashes happening now!!"
+          />
+        </ScrollView>
       </SafeAreaView>
-      <ScrollView>
-        <Catagories />
-        <FeaturedRow id="123" title="Parlors" description="Shops near you" />
-
-        <FeaturedRow
-          id="1234"
-          title="Artists"
-          description="Artists you might like."
-        />
-
-        <FeaturedRow
-          id="12345"
-          title="Offers Near You!"
-          description="Special flashes happening now!!"
-        />
-      </ScrollView>
     </View>
   );
 };
