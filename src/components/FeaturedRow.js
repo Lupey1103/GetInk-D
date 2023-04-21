@@ -16,7 +16,7 @@ export const FeaturedRow = ( {id, title, description,}) => {
       <ScrollView
       horizontal
       contentContainerStyle={{
-        paddingHorizontal: 15
+        paddingHorizontal: 15,
       }}
       showsHorizontalScrollIndicator={false}
       className='pt-4'
